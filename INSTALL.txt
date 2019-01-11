@@ -1,0 +1,117 @@
+=============================================================================== 
+                           _______  _______  _______ 
+                          (  ___  )(  ____ \(  ____ \
+                          | (   ) || (    \/| (    \/
+                          | (___) || |      | (__    
+                          |  ___  || |      |  __)   
+                          | (   ) || |      | (      
+                          | )   ( || (____/\| (____/\
+                          |/     \|(_______/(_______/
+
+                            for Unreal Tournament
+                           (c) 2009-2018 - AnthraX
+===============================================================================
+
+1) Installation
+---------------
+
+*******************************************************************************
+****************** UPGRADING FROM A PREVIOUS ACE INSTALLATION *****************
+*******************************************************************************
+
+* Unzip this package into your server's UT folder. Make sure that the Logs and
+Shots folders are created!
+
+* Open your server's UnrealTournament.ini file and browse to the 
+[Engine.GameEngine] section.
+
+* Find:
+	ServerActors=NPLoader_v<some version>.NPLActor
+  Replace with:
+  	ServerActors=NPLoader_v17.NPLActor
+  	
+* Reboot your server. The rest of the installation is automatic.
+  	
+*******************************************************************************
+***************** UPGRADING FROM A UTDC/UTDCPLUS INSTALLATION *****************
+*******************************************************************************
+
+* Unzip this package into your server's UT folder. Make sure that the Logs and
+Shots folders are created!
+
+* Open your server's UnrealTournament.ini file and browse to the 
+[Engine.GameEngine] section.
+
+* Delete ALL ServerActors and ServerPackages with   
+  UTDC, UTDCPlus OR NPLoader in them.
+  
+  DOUBLE CHECK IF YOU'VE REMOVED EVERYTHING!
+  
+* Add:
+
+  ServerActors=NPLoader_v17.NPLActor
+
+* Reboot your server. The rest of the installation is automatic.
+  
+*******************************************************************************
+************************* INSTALLING ON A CLEAN SERVER ************************
+*******************************************************************************
+
+* Unzip this package into your server's UT folder. Make sure that the Logs and
+Shots folders are created!
+
+* Open your server's UnrealTournament.ini file and browse to the 
+[Engine.GameEngine] section.
+
+* Add:
+  
+  ServerActors=NPLoader_v17.NPLActor  
+    
+* Reboot your server. The rest of the installation is automatic.
+
+*******************************************************************************
+
+2) Settings
+-----------
+
+For most people, ACE will work fine with the default settings. Should
+you run any custom mods that perform rendering or input operations and that
+are not recognized by ACE, then add the following section to your server's
+UnrealTournament.ini file:
+
+[ACEv10_AutoConfig.ACEAutoConfigActor]
+UPackages[0]=
+UPackages[1]=
+
+Then add your mod to this list. If you run a mod called MyMod.u for example,
+simply add UPackages[0]=MyMod.u. You can add up to 32 packages to this list.
+
+3) To the mod authors
+---------------------
+
+The following packages are open source:
+
+* IACEv10: This package contains the interfaces for many of the ACE classes.
+Do NOT recompile this package! It is open source so you can see how it works.
+
+* ACEv10f_EH: This is the ACE event handler. It is very similar to UTDC's
+EventActor. You're more than welcome to edit this package and to share your
+modifications.
+
+* ACEv10_AutoConfig: This is a small mod that automatically sets up the ACE
+UPackages list. Once again, you're more than welcome to edit this.
+
+You can use wotgrealexporter to export the source code from the .u files
+or you can download the source code from:
+
+https://github.com/stijn-volckaert/
+
+4) Feedback and Support
+-----------------------
+
+http://www.unrealadmin.org/forums/forumdisplay.php?f=177
+
+===============================================================================
+
+
+

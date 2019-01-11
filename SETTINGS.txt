@@ -1,0 +1,104 @@
+=============================================================================== 
+                           _______  _______  _______ 
+                          (  ___  )(  ____ \(  ____ \
+                          | (   ) || (    \/| (    \/
+                          | (___) || |      | (__    
+                          |  ___  || |      |  __)   
+                          | (   ) || |      | (      
+                          | )   ( || (____/\| (____/\
+                          |/     \|(_______/(_______/
+
+                            for Unreal Tournament
+                           (c) 2009-2018 - AnthraX
+===============================================================================
+
+To configure ACE, add the following lines to the server.ini:
+
+[ACEv10f_S.ACEActor]
+ACEPort=0
+bAllowOtherPorts=true
+bAutoUpdateFileList=true
+SShotPath=../Shots/
+SShotPrefix=[ACE]
+FileListName=ACEFileList.txt
+FileListPath=./
+LogPath=../Logs/
+LogPrefix=[ACE]
+HandshakeTimeout=30.0
+InitialCheckTimeout=70.0
+PeriodicCheckInterval=45.0
+PeriodicCheckTimeout=60.0
+SShotTimeOut=40.0
+bStrictSystemLibraryChecks=false
+bSShotWhenKick=true
+bAutoConfig=true
+AutoConfigPackage=ACEv10_AutoConfig
+UPackages[0]=
+NativePackages[0]=
+AdminPass=
+bAllowCrosshairScaling=true
+bShowLogo=true
+LogoXPos=10
+LogoYPos=100
+bCheckSpectators=true
+bAutoFindWANIp=true
+bCacheWANIP=true
+WANQueryServer[0]=utgl.unrealadmin.org/ip.php
+
+===============================================================================
+Supported Settings:
+===============================================================================
+
+* ACEPort, bAllowOtherPorts: Refer to FIREWALL.txt
+
+* bAutoUpdateFileList: when set to true, ACE will automatically download 
+  updates for the FileList. Please note that this feature is currently disabled
+  and will be reenabled when v0.9 reaches the BETA stage.
+* FileListName: Name of the FileList
+* FileListPath: Folder in which to look for the FileList
+
+* SShotPath: Folder in which the screenshots should be stored
+* SShotPrefix: Prefix for the screenshot file names
+
+* LogPath: Folder in which the logs should be stored
+* LogPrefix: Prefix for the log file names
+
+* HandshakeTimeout: Time allowed for the players to complete the handshake
+* InitialCheckTimeout: Time allowed for the players to complete the initial 
+  check. Please note that the initial check usually takes longer to complete
+  than the periodic check.
+* PeriodicCheckInterval: Time between consecutive periodic checks
+* PeriodicCheckTimeout: Time allowed for players to complete the periodic check
+* SShotTimeout: Time allowed for players to complete sending a screenshot
+
+* bStrictSystemLibraryChecks: When set to true, ACE will kick for patches
+in system libraries. Very few cheats patch system libraries but lots of
+external tools do. Thus, setting this to true may cause lots of false positives.
+
+* bSShotWhenKick: When set to true, the gameserver will request screenshots to
+  be taken when a player is kicked
+
+* bAutoConfig: When set to true, ACE will attempt to automatically configure
+  the UPackages list.
+* AutoConfigPackage: Name of the AutoConfig package (without the .u extension)
+
+* UPackages: Names of extra mods to be checked by ACE (with .u extensions)
+* NativePackages: Names of extra libraries to be checked by ACE (with .dll)
+
+* AdminPass: when configured, this adminpass can be used to take silent 
+  screenshots
+
+* bAllowCrosshairScaling: when set to true, players are allowed to change the
+  rendering scale of their crosshairs. Does not work with EUT!
+  
+* bShowLogo: when set to true, ACE will render a logo that shows the progress
+  of the initial check.
+* LogoXPos: X-Offset of the logo (in pixels, relative to the left side of the 
+  screen)
+* LogoYPos: Y-Offset of the logo (in pixels, relative to the middle horizontal)
+
+* bCheckSpectators: When set to true, ACE will also check spectators
+
+* bAutoFindWANIp, bCacheWANIP, WANQueryServer: Refer to NAT.txt
+
+===============================================================================
