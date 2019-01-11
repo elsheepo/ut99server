@@ -1,4 +1,4 @@
-Log: Log file open, Fri Jan 11 21:08:02 2019
+Log: Log file open, Fri Jan 11 21:18:44 2019
 Init: Name subsystem initialized
 Init: Version: 451
 Init: Compiled: May  6 2003 22:27:59
@@ -9,7 +9,7 @@ Log: Bound to Editor.so
 Log: Bound to Core.so
 Log: Bound to Engine.so
 Init: Object subsystem initialized
-Init: CPU Speed=1584.030131 MHz
+Init: CPU Speed=1584.020939 MHz
 Log: Executing Class Engine.ServerCommandlet
 Init: Unreal engine initialized
 Log: Browse: DM-Pressure?Name=Player?Class=Botpack.TMale2?team=255?skin=SoldierSkins.blkt?Face=SoldierSkins.Othello?game=BotPack.DeathMatchPlus?Mutator=Instagib
@@ -23,7 +23,6 @@ Log: Garbage: objects: 16885->16883; refs: 274429
 Log: Game class is 'DeathMatchPlus'
 Init: Sockets: Socket queue 262144 / 262144
 Init: Sockets: I am LIVA (127.0.1.1)
-DevNet: TcpNetDriver on port 7777
 Log: Server Package: SoldierSkins
 Log: Case-insensitive search: SoldierSkins -> ../Textures/Soldierskins.utx
 Log: Server Package: CommandoSkins
@@ -32,15 +31,22 @@ Log: Server Package: SGirlSkins
 Log: Server Package: BossSkins
 Log: Server Package: Botpack
 Log: Case-insensitive search: Botpack -> ../System/BotPack.u
-Log: Spawning: IpDrv.UdpBeacon
-Log: Spawning: IpServer.UdpServerQuery
-Log: Spawning: IpServer.UdpServerUplink
-Log: Spawning: IpServer.UdpServerUplink
-Log: Spawning: IpServer.UdpServerUplink
-Log: Spawning: UWeb.WebServer
+Log: Server Package: 2k4Combos
+Log: Server Package: NewNetUnrealv0_9
 Log: Bound to UWeb.so
+Log: Server Package: NewNetWeaponsv0_9
+Log: Server Package: MapVoteLA13
+Log: Case-insensitive search: MapVoteLA13 -> ../System/MapvoteLA13.u
+Log: Spawning: IpDrv.UdpBeacon
+Log: Spawning: SecureValidate.SVUdpServerQuery
+Log: Spawning: SecureValidate.SVUdpServerUplink
+Log: Spawning: SecureValidate.SVUdpServerUplink
+Log: Spawning: SecureValidate.SVUdpServerUplink
+Log: Spawning: UWeb.WebServer
+Log: Spawning: 2k4Combos.CombosSA
+Log: Spawning: NPLoader_v17.NPLActor
 Log: Level is Level DM-Pressure.MyLevel
-Log: Bringing Level DM-Pressure.MyLevel up for play (20)...
+Log: Bringing Level DM-Pressure.MyLevel up for play (65)...
 ScriptLog: InitGame: ?Name=Player?Class=Botpack.TMale2?team=255?skin=SoldierSkins.blkt?Face=SoldierSkins.Othello?game=BotPack.DeathMatchPlus?Mutator=Instagib
 ScriptLog: Base Mutator is DM-Pressure.DMMutator0
 ScriptLog: Mutators Instagib
@@ -51,50 +57,152 @@ ScriptLog: Found DM-Pressure.RazorAmmo2 at -1433.456787,-1904.396484,-237.899536
 ScriptLog: Found DM-Pressure.TrapSpringer0 at 1025.619873,1431.202026,-480.652618
 ScriptLog: Found DM-Pressure.TrapSpringer1 at 1023.230591,733.142212,-481.902069
 ScriptLog: UdpServerQuery(crt): Port 7778 successfully bound.
-ScriptLog: DoUplink is not set.  Not connecting to Master Server.
-ScriptLog: DoUplink is not set.  Not connecting to Master Server.
-ScriptLog: DoUplink is not set.  Not connecting to Master Server.
-ScriptLog: Webserver is not enabled.  Set bEnabled to True in Advanced Options.
-ScriptLog: Initiating local logging...
-ScriptLog: Initiating world logging...
+Log: Resolving unreal.epicgames.com...
+Log: Resolving master0.gamespy.com...
+Log: Resolving master.mplayer.com...
+ScriptLog: ### 2k4Combos Initialized v1.0 - © )°DoE°(-AnthraX 2004
+Log: Bound to PackageHelper_v13.so
+ScriptLog: +-------------------------------------------------------------------------+
+ScriptLog: |                        Native Plugin Loader v1.7                        |
+ScriptLog: |                          (c) 2008-2009 AnthraX                          |
+ScriptLog: +-------------------------------------------------------------------------+
+ScriptLog: | Auto Added ServerPackage: NPLoader_v17                                  |
+ScriptLog: | Auto Added ServerPackage: NPLoaderLLU_v17                               |
+ScriptLog: | Auto Added ServerPackage: NPLoaderLLD_v17                               |
+ScriptLog: | Auto Added ServerPackage: NPLoaderLLS_v17                               |
+ScriptLog: +-------------------------------------------------------------------------+
+Log: Bound to ACEv10f_S.so
+ScriptLog: | NPLoader has found a new NPLoader mod in your system folder:            |
+ScriptLog: | - InfoClass: ACEv10f_S.ACEInfo                                          |
+ScriptLog: | - Mod Name : ACEv10f                                                    |
+ScriptLog: | - Mod Desc : AntiCheatEngine for Unreal Tournament 99                   |
+ScriptLog: | - Installing...                                                         |
+ScriptLog: | - Mod installation complete!                                            |
+ScriptLog: +-------------------------------------------------------------------------+
+Log: Case-insensitive search: ACEV10F_CDLL -> ../System/ACEv10f_Cdll.u
+ScriptLog: | Fixing Installation for mod:                                            |
+ScriptLog: | - Mod Name: ACEv10f                                                     |
+ScriptLog: | - Mod Desc: AntiCheatEngine for Unreal Tournament 99                    |
+ScriptLog: | Auto Added ServerPackage: ACEv10f_Cdll                                  |
+ScriptLog: | Auto Added ServerActor: ACEv10f_S.ACEActor                              |
+ScriptLog: | Auto Added ServerActor: ACEv10f_EH.ACEEventActor                        |
+ScriptLog: | Auto Added ServerPackage: IACEv10                                       |
+ScriptLog: | Auto Added ServerPackage: ACEv10f_C                                     |
+ScriptLog: +-------------------------------------------------------------------------+
+ScriptLog: | NrOfPackages = 1                                                        |
+ScriptLog: | NPLoader has changed the server settings.                               |
+ScriptLog: | The server will now reboot.                                             |
+ScriptLog: ProcessServerTravel: DM-Pressure
+ScriptLog: +-------------------------------------------------------------------------+
 Init: Game engine initialized
 Log: UDP recvfrom error: 11 from 0.0.0.0:0
-DevNet: NotifyAcceptingConnection: Server MyLevel accept
-NetComeGo: Open MyLevel Fri Jan 11 21:09:06 2019 192.168.11.21:63265
-DevNet: NotifyAcceptingChannel Control 0 server Level DM-Pressure.MyLevel: Accepted
-DevNet: Level server received: HELLO REVISION=0 MINVER=432 VER=451
-DevNet: Level server received: NETSPEED 20000
-Log: Client netspeed is 20000
-DevNet: Level server received: LOGIN RESPONSE=-1115974846 URL=Index.unr?Name=blacksheep?Class=BotPack.TFemale2?team=0?skin=SGirlSkins.fwar?Face=SGirlSkins.Fury?Voice=BotPack.VoiceFemaleOne?OverrideClass=?Checksum=NoChecksum
-DevNet: Client passed challenge
-DevNet: Login request: Index.unr?Name=blacksheep?Class=BotPack.TFemale2?team=0?skin=SGirlSkins.fwar?Face=SGirlSkins.Fury?Voice=BotPack.VoiceFemaleOne?OverrideClass=?Checksum=NoChecksum
-DevNet: Level server received: HAVE GUID=1E90ACBE11D1ED664544279700005453 GEN=2
-DevNet: Level server received: HAVE GUID=66FC62C111D389A2E0006BA2D2321081 GEN=2
-DevNet: Level server received: HAVE GUID=C47BBD4011D38CFBC00084B50A1E604F GEN=2
-DevNet: Level server received: HAVE GUID=7944E70211D2D09C9000F1BD583F3D27 GEN=2
-DevNet: Level server received: HAVE GUID=1E90ACAE11D1ED664544279700005453 GEN=2
-DevNet: Level server received: HAVE GUID=1E90ACAF11D1ED664544279700005453 GEN=2
-DevNet: Level server received: HAVE GUID=381560A111D3108B9000F1BD623F3D27 GEN=2
-DevNet: Level server received: HAVE GUID=2E3682A411D379A7E0006BA2D2321081 GEN=2
-DevNet: Level server received: HAVE GUID=1E90ACB011D1ED664544279700005453 GEN=2
-DevNet: Level server received: HAVE GUID=A3B94EE811D1ED674544E58A00005453 GEN=1
-DevNet: Level server received: HAVE GUID=A3B94EE411D1ED674544E58A00005453 GEN=1
-DevNet: Level server received: HAVE GUID=1E90ACB511D1ED664544279700005453 GEN=2
-DevNet: Level server received: HAVE GUID=CCD2D94111D2DAE29000F1BD583F3D27 GEN=1
-DevNet: Level server received: HAVE GUID=A3B94EE311D1ED674544E58A00005453 GEN=1
-DevNet: Level server received: HAVE GUID=DFC22BE011D31EB3E0006BA2D2321081 GEN=1
-DevNet: Level server received: JOIN
-DevNet: Join request: Index.unr?Name=blacksheep?Class=BotPack.TFemale2?team=0?skin=SGirlSkins.fwar?Face=SGirlSkins.Fury?Voice=BotPack.VoiceFemaleOne?OverrideClass=?Checksum=NoChecksum
-ScriptLog: Team 0
-ScriptLog: Login: blacksheep
-Log: Possessed PlayerPawn: TFemale2 DM-Pressure.TFemale0
-DevNet: Join succeeded: blacksheep
-NetComeGo: Close TcpipConnection0 Fri Jan 11 21:10:55 2019
-Log: appRequestExit(0)
-Critical: appSleep
-Critical: EnforceTickRate
-Critical: UServerCommandlet::Main
+Log: Resolved unreal.epicgames.com (199.255.40.174)
+ScriptLog: UdpServerUplink: Master Server is unreal.epicgames.com:27900
+ScriptLog: UdpServerUplink: Port 7779 successfully bound.
+Log: Resolved master.mplayer.com (98.124.199.29)
+ScriptLog: UdpServerUplink: Master Server is master.mplayer.com:27900
+ScriptLog: UdpServerUplink: Port 7779 successfully bound.
+Log: AInternetLink Resolve failed: Can't find host master0.gamespy.com (NO_ERROR)
+ScriptLog: UdpServerUplink: Failed to resolve master server address, aborting.
+Log: Server switch level: DM-Pressure
+Log: Browse: DM-Pressure?Name=Player?Class=Botpack.TMale2?team=255?skin=SoldierSkins.blkt?Face=SoldierSkins.Othello?game=BotPack.DeathMatchPlus?Mutator=Instagib
+Log: LoadMap: DM-Pressure?Name=Player?Class=Botpack.TMale2?team=255?skin=SoldierSkins.blkt?Face=SoldierSkins.Othello?game=BotPack.DeathMatchPlus?Mutator=Instagib
+Exit: WinSock shut down
+Log: Collecting garbage
+Log: Purging garbage
+Log: -0.0ms Unloading: Package SoldierSkins
+Log: -0.0ms Unloading: Package CommandoSkins
+Log: -0.0ms Unloading: Package FCommandoSkins
+Log: -0.0ms Unloading: Package SGirlSkins
+Log: -0.0ms Unloading: Package BossSkins
+Log: -0.0ms Unloading: Package 2k4Combos
+Log: -0.0ms Unloading: Package NewNetUnrealv0_9
+Log: -0.0ms Unloading: Package UTMenu
+Log: -0.0ms Unloading: Package LadderSounds
+Log: -0.0ms Unloading: Package UTServerAdmin
+Log: -0.0ms Unloading: Package IpServer
+Log: -0.0ms Unloading: Package LadrArrow
+Log: -0.0ms Unloading: Package NewNetWeaponsv0_9
+Log: -0.0ms Unloading: Package MapVoteLA13
+Log: -0.0ms Unloading: Package SecureValidate
+Log: -0.0ms Unloading: Package NPLoader_v17
+Log: -0.0ms Unloading: Package ACEv10f_S
+Log: -0.0ms Unloading: Package IACEv10
+Log: -0.0ms Unloading: Package ACEv10f_C
+Log: -0.0ms Unloading: Package ACEV10F_CDLL
+Log: Garbage: objects: 20727->17232; refs: 277169
+Log: Game class is 'DeathMatchPlus'
+Init: Sockets: Socket queue 262144 / 262144
+Log: Server Package: SoldierSkins
+Log: Case-insensitive search: SoldierSkins -> ../Textures/Soldierskins.utx
+Log: Server Package: CommandoSkins
+Log: Server Package: FCommandoSkins
+Log: Server Package: SGirlSkins
+Log: Server Package: BossSkins
+Log: Server Package: Botpack
+Log: Case-insensitive search: Botpack -> ../System/BotPack.u
+Log: Server Package: 2k4Combos
+Log: Server Package: NewNetUnrealv0_9
+Log: Server Package: NewNetWeaponsv0_9
+Log: Server Package: MapVoteLA13
+Log: Case-insensitive search: MapVoteLA13 -> ../System/MapvoteLA13.u
+Log: Server Package: NPLoader_v17
+Log: Server Package: NPLoaderLLU_v17
+Log: Server Package: NPLoaderLLD_v17
+Log: Server Package: NPLoaderLLS_v17
+Log: Server Package: ACEv10f_Cdll
+Log: Server Package: IACEv10
+Log: Server Package: ACEv10f_C
+Log: Spawning: IpDrv.UdpBeacon
+Log: Spawning: SecureValidate.SVUdpServerQuery
+Log: Spawning: SecureValidate.SVUdpServerUplink
+Log: Spawning: SecureValidate.SVUdpServerUplink
+Log: Spawning: SecureValidate.SVUdpServerUplink
+Log: Spawning: UWeb.WebServer
+Log: Spawning: 2k4Combos.CombosSA
+Log: Spawning: NPLoader_v17.NPLActor
+Log: Spawning: ACEv10f_S.ACEActor
+Log: Spawning: ACEv10f_EH.ACEEventActor
+Log: Level is Level DM-Pressure.MyLevel
+Log: Bringing Level DM-Pressure.MyLevel up for play (65)...
+ScriptLog: InitGame: ?Name=Player?Class=Botpack.TMale2?team=255?skin=SoldierSkins.blkt?Face=SoldierSkins.Othello?game=BotPack.DeathMatchPlus?Mutator=Instagib
+ScriptLog: Base Mutator is DM-Pressure.DMMutator1
+ScriptLog: Mutators Instagib
+ScriptLog: Add mutator Instagib
+Warning: Failed to load 'NULL': Can't resolve package name
+Warning: Failed to load 'Class None.Instagib': Can't resolve package name
+ScriptLog: Found DM-Pressure.RazorAmmo2 at -1433.456787,-1904.396484,-237.899536
+ScriptLog: Found DM-Pressure.TrapSpringer0 at 1025.619873,1431.202026,-480.652618
+ScriptLog: Found DM-Pressure.TrapSpringer1 at 1023.230591,733.142212,-481.902069
+ScriptLog: UdpServerQuery(crt): Port 7778 successfully bound.
+Log: Resolving unreal.epicgames.com...
+Log: Resolving master0.gamespy.com...
+Log: Resolving master.mplayer.com...
+ScriptLog: ### 2k4Combos Initialized v1.0 - © )°DoE°(-AnthraX 2004
+ScriptLog: +-------------------------------------------------------------------------+
+ScriptLog: |                        Native Plugin Loader v1.7                        |
+ScriptLog: |                          (c) 2008-2009 AnthraX                          |
+ScriptLog: +-------------------------------------------------------------------------+
+Log: Case-insensitive search: ACEV10F_CDLL -> ../System/ACEv10f_Cdll.u
+ScriptLog: | Package 0:                                                              |
+ScriptLog: | - Name   : ACEv10f                                                      |
+ScriptLog: | - Author : AnthraX                                                      |
+ScriptLog: | - Desc   : AntiCheatEngine for Unreal Tournament 99                     |
+ScriptLog: | - DLL    : ACEv10f_C.dll                                                |
+ScriptLog: | - DLLLDR : ACEv10f_Cdll.u                                               |
+ScriptLog: | - DLLURL : http://utgl.unrealadmin.org/ACE/v10/ACEv10f_C.dll            |
+ScriptLog: | - DLLMD5 : multiple versions (3)                                        |
+ScriptLog: +-------------------------------------------------------------------------+
+ScriptLog: | NrOfPackages = 1                                                        |
+ScriptLog: +-------------------------------------------------------------------------+
+ScriptLog: +--------------------------------------+
+ScriptLog: |       ACE for Unreal Tournament      |
+ScriptLog: |                 v10f                 |
+ScriptLog: |        (c) 2009-2016 - AnthraX       |
+ScriptLog: +--------------------------------------+
+Critical: appError called:
+Critical: Failed to find function fbth2T_0 in ACENICHelper Transient.ACENICHelper0
 Exit: Executing UObject::StaticShutdownAfterError
 Exit: Exiting.
 Uninitialized: Name subsystem shut down
-Uninitialized: Log file closed, Fri Jan 11 21:11:16 2019
+Uninitialized: Log file closed, Fri Jan 11 21:18:53 2019
