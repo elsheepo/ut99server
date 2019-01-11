@@ -1,16 +1,8 @@
-<html>
-<head>
-<title>Untitled Document</title>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-</head>
-
-<body bgcolor="#FFFFFF">
-<b>%CurrentGame%</b>
-<p>
+<!-- #include file="inc/whiteheader.inc" -->
 <form method="post" action="%PostAction%">
   <input type="hidden" name="Sort" value="%Sort%">
   <table width="400" border="0">
-    <tr> 
+    <tr>
       <td width="1%%">
         <input type="submit" name="Refresh" value="Refresh">
       </td>
@@ -23,7 +15,7 @@
     </tr>
   </table>
   <table width="400" border="0">
-    <tr> 
+    <tr>
       <td width="1%%">Kick</td>
       <td width="1%%">BanIP</td>
       <td><a href="%PostAction%?Sort=Name" target="_self">Name:</a></td>
@@ -36,5 +28,4 @@
   </table>
   <input type="submit" name="Kick" value="Kick / Ban">
 </form>
-</body>
-</html>
+<!-- #include file="inc/footer.inc" -->

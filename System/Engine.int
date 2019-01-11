@@ -1,6 +1,8 @@
 [Public]
 ;Object=(Name=Engine.Console,Class=Class,MetaClass=Engine.Console)
 Object=(Name=Engine.ServerCommandlet,Class=Class,MetaClass=Core.Commandlet)
+Object=(Name=Engine.CheckSumCommandlet,Class=Class,MetaClass=Core.Commandlet)
+Object=(Name=Engine.MD5Commandlet,Class=Class,MetaClass=Core.Commandlet)
 Preferences=(Caption="Advanced",Parent="Advanced Options")
 Preferences=(Caption="Game Engine Settings",Parent="Advanced",Class=Engine.GameEngine,Category=Settings,Immediate=True)
 Preferences=(Caption="Key Aliases",Parent="Advanced",Class=Engine.Input,Immediate=True,Category=Aliases)
@@ -162,3 +164,9 @@ HelpDesc[0]=Specify the log file to generate
 HelpParm[1]=AllAdmin
 HelpDesc[1]=Give all players admin privelages
 
+[CheckSumCommandlet]
+HelpCmd=checksum
+HelpOneLiner=Calculate package checksum for stat logging
+HelpUsage=checksum packagename.u
+HelpParm[0]=Filename
+HelpDesc[0]=Filename to calculate checksum

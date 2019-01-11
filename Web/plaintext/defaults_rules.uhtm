@@ -1,15 +1,10 @@
-<html>
-<head>
-<title>Untitled Document</title>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-</head>
-<body bgcolor="#FFFFFF">
+<!-- #include file="inc/whiteheader.inc" -->
 <form method="post" action="%PostAction%">
   <input type="hidden" name="GameType" value="%GameType%">
   <table width="300" border="0" cellpadding="0">
 %FragSubst%
 %TimeLimitSubst%
-    <tr> 
+    <tr>
       <td>Max Connections</td>
       <td width="1%%"><input type="text" name="MaxPlayers" maxlength="3" size="3" value="%MaxPlayers%"></td>
     </tr>
@@ -20,14 +15,14 @@
 %BalanceSubst%
 %TeamSubst%
 %ForceRespawnSubst%
-    <tr> 
+    <tr>
       <td>Weapons Stay</td>
       <td width="1%%"><input type="checkbox" name="WeaponsStay" value="true"%WeaponsStay%></td>
     </tr>
     <tr>
       <td>Tournament</td>
-      <td width="1%%"> 
-        <div align="left"> 
+      <td width="1%%">
+        <div align="left">
           <input type="checkbox" name="Tournament" value="true"%Tournament%>
         </div>
       </td>
@@ -37,5 +32,4 @@
     <tr align="right"><td colspan="5"><input type="submit" name="Apply" value="Apply"></td></tr>
   </table>
 </form>
-</body>
-</html>
+<!-- #include file="inc/footer.inc" -->

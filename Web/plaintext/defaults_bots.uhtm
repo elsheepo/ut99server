@@ -1,10 +1,4 @@
-<html>
-<head>
-<title>Untitled Document</title>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-</head>
-
-<body bgcolor="#FFFFFF">
+<!-- #include file="inc/whiteheader.inc" -->
 <form method="post" action="%PostAction%">
   <input type="hidden" name="GameType" value="%GameType%">
   <table width="300" border="0">
@@ -20,11 +14,11 @@
         <option value="7"%BotDifficulty7%>Godlike</option>
       </select></td>
     </tr>
-    <tr> 
+    <tr>
       <td>Minimum Total Players:</td>
       <td width="1%%"><input type="text" name="MinPlayers" maxlength="3" size="3" value="%MinPlayers%"></td>
     </tr>
-    <tr> 
+    <tr>
       <td>Auto Adjust Skill</td>
       <td width="1%%"><input type="checkbox" name="AutoAdjustSkill" value="true"%AutoAdjustSkill%></td>
     </tr>
@@ -35,14 +29,13 @@
 %BalanceSubst%
 %DumbDownSubst%
 	<tr><td colspan="5">&nbsp;</td></tr>
-    <tr> 
-      <td colspan="2"> 
-        <div align="right"> 
+    <tr>
+      <td colspan="2">
+        <div align="right">
           <input type="submit" name="Apply" value="Apply">
         </div>
       </td>
     </tr>
   </table>
 </form>
-</body>
-</html>
+<!-- #include file="inc/footer.inc" -->
