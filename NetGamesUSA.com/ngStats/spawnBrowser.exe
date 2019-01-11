@@ -1,0 +1,17 @@
+#!/bin/csh
+###########################################################
+# CHANGE THESE VARIABLES TO MATCH YOUR SYSTEM CONFIGURATION
+
+#setenv BROWSER /usr/bin/netscape
+#a value of 'echo' will cause nothing to happen when this program is called
+setenv BROWSER echo
+
+#
+###########################################################
+
+setenv AAA openURL\(file:$1\)
+setenv BBB file:$1
+
+if ( { $BROWSER -remote $AAA } == 0 ) then
+  $BROWSER $BBB &
+endif

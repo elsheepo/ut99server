@@ -1,0 +1,56 @@
+#!/bin/sh
+#
+# ngWorldStats.exe for linux
+# version 0.3.0, 2000-10-06
+# abfackeln@abfackeln.com
+#
+########################################
+#
+# this file contains no user servicable parts.
+#
+########################################
+#
+# the objective of this script was to execute the
+# ngWorldStats batcher without hanging up the
+# UT server by waiting for the NetGames server
+# to respond (which sometimes may take a long
+# time and force the UT server to switch ports
+# which is obviously a bad thing)
+#
+# a new objective is to support the home
+# directory option introduced in loki games
+# linux UT 4.25 server by searching for all
+# possible locations for the ngWorldStats
+# binary executable file
+#
+# comments and suggestions to enhance this
+# script should be sent to abfackeln at
+# abfackeln@abfackeln.com
+#
+# as always, any comments are welcome and
+# i hope that this script alleviates all of
+# the ngWorldStats problems from the past
+#
+# -abf.
+#
+########################################
+
+WorldBatcherURL="../NetGamesUSA.com/ngWorldStats/bin/ngWorldStats"
+
+if [ ! -x "$WorldBatcherURL" ]; then
+	INSTALL_DIR=`cat $HOME/.loki/ut/install_dir`
+	HomeBatcherURL="$INSTALL_DIR/NetGamesUSA.com/ngWorldStats/bin/ngWorldStats"
+
+	if [ ! -x "$HomeBatcherURL" ]; then
+		echo "ngWS ERROR: can not exec: $WorldBatcherURL or $HomeBatcherURL"
+		exit 0
+	fi
+
+	WorldBatcherURL="$HomeBatcherURL"
+fi
+
+$WorldBatcherURL $* &
+echo "ngWS OK: $WorldBatcherURL $* &"
+
+exit 99
+

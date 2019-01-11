@@ -1,0 +1,18 @@
+End User License Agreement (EULA)
+
+This End User License Agreement covers your use of NetGames USA Inc.'s ngWorldStats for Unreal Tournament, ngWorldStats.exe, its source code, documentation, images and logos, and executable files, hereinafter referred to as "The Product". This License Agreement covers the current version of The Product. NetGames USA, Inc. reserves the right to modify the terms of this License Agreement at any moment, and without prior notification, in future releases of The Product.
+
+The Product is Copyright (c) 1999 NetGames USA, Inc. You do not own The Product rather NetGames USA, Inc. grants you the non-exclusive right to use The Product. You may not modify, copy, duplicate, reproduce, license or sublicense The Product or any portion thereof, or transfer or convey The Product or any portion thereof or any right in The Product to anyone else without the prior written consent of NetGames USA, Inc. You may not decompile, reverse engineer or prepare or develop derivative works based upon The Product. You MAY USE The Product for the sole purpose of enabling private or public, either commercial or non-commercial in purpose, Internet based Unreal Tournament servers to deliver game log information to NetGames USA to use unrestricted.
+
+
+DISCLAIMER OF WARRANTY
+
+THE PRODUCT IS PROVIDED ON AN "AS IS" BASIS WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, WARRANTIES OF TITLE OR IMPLIED WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE, OTHER THAN THOSE WARRANTIES WHICH ARE IMPLIED BY AND INCAPABLE OF EXCLUSION, RESTRICTION OR MODIFICATION UNDER THE LAWS APPLICABLE TO THIS AGREEMENT. THE ENTIRE RISK AS TO DETERMINING THE SUITABILITY, QUALITY AND PERFORMANCE OF THE PRODUCT IS WITH YOU. SHOULD THE PRODUCT PROVE DEFECTIVE, THE FULL COST OF REPAIR, SERVICING, OR CORRECTION LIES WITH YOU.
+
+NETGAMES USA INC. SHALL NOT BE RESPONSIBLE FOR, AND SHALL NOT PAY, ANY AMOUNT OF INCIDENTAL, CONSEQUENTIAL OR OTHER INDIRECT DAMAGES, WHETHER BASED ON LOST REVENUE OR OTHERWISE RESULTING FROM THE FAILURE OF THE PRODUCT, REGARDLESS OF WHETHER NETGAMES USA INC. WAS ADVISED OF THE POSSIBILITY OF SUCH LOSSES IN ADVANCE AND REGARDLESS OF WHETHER YOUR CLAIM IS BASED ON CONTRACT, TORT, STRICT LIABILITY, PRODUCT LIABILITY OR OTHERWISE.
+
+TECHNICAL SUPPORT
+
+NetGames USA Inc. only provides support for The Product in the form of Frequently Asked Questions (FAQ's) and web page information available by hyperlink solely at http://UT.ngWorldStats.com/FAQ/ No other support is available. NetGames USA Inc. , however, reserves the right to remove or cease any and all support at any moment, and without prior notification.
+
+June 1st, 1999

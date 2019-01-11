@@ -1,0 +1,63 @@
+#!/bin/sh
+
+#######
+## this next bit written by abfackeln@abfackeln.com
+## to ensure that the files are actually found
+## this has not really been tested, hence the debug.
+## modified by abfackeln, 2000-10-10
+#######
+
+INSTALL_DIR=`cat $HOME/.loki/ut/install_dir`
+
+JAVA1=`which java`
+JAVA2="/usr/local/java/bin/java"
+JAVA3="/usr/jdk1.2/bin/java"
+NGHOME1="../NetGamesUSA.com/ngStats"
+NGHOME2="$INSTALL_DIR/../NetGamesUSA.com/ngStats"
+NGHOME3="$HOME/UnrealTournament/NetGamesUSA.com/ngStats"
+
+# try each of the above to see if they work
+
+if [ ! -x "$JAVA1" ]; then
+	if [ ! -x "$JAVA2" ]; then
+		if [ ! -x "$JAVA3" ]; then
+			echo "ngLS: can not exec: $JAVA1"
+			echo "ngLS: can not exec: $JAVA2"
+			echo "ngLS: can not exec: $JAVA3"
+			exit 0
+		else
+			JAVA="$JAVA3"
+		fi
+	else
+		JAVA="$JAVA2"
+	fi
+else
+	JAVA="$JAVA1"
+fi
+
+if [ ! -d "$NGHOME1" ]; then
+	if [ ! -d "$NGHOME2" ]; then
+		if [ ! -d "$NGHOME3" ]; then
+			echo "ngLS: can not find: $NGHOME1"
+			echo "ngLS: can not find: $NGHOME2"
+			echo "ngLS: can not find: $NGHOME3"
+			exit 0
+		else
+			NGHOME="$NGHOME3"
+		fi
+	else
+		NGHOME="$NGHOME2"
+	fi
+else
+	NGHOME="$NGHOME1"
+fi
+
+#######
+
+export CLASSPATH="$NGHOME/ngusa.jar"
+export NGCONFIG="$NGHOME/ngStatsUT.cfg"
+export NGHOME
+
+echo "ngLS: $JAVA ngStatsUT -c $NGCONFIG -j $NGHOME $*"
+$JAVA ngStatsUT -c $NGCONFIG -j $NGHOME $* &
+

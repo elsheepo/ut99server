@@ -1,0 +1,58 @@
+/* Default Skin file for NetGames USA's ngStats for Unreal Tournament from Epic Games    */
+/* It is advised that you not edit this file unless you know exactly what your doing     */
+/* For information about making custom skins see the ngStats for UT page at NetGames USA */
+/*                                                                                       */
+/*                        http://www.NetGamesUSA.com/ngStats/UT/                         */
+
+.bck { background-color: #FFFFFF }
+.a{  font-family: Arial, Helvetica, sans-serif; font-size: 10pt; font-weight: bold; color: #FF0000; text-decoration: none}
+.b{  font-family: Arial, Helvetica, sans-serif; font-size: 12pt; font-weight: bold; color: #FF0000; text-decoration: none}
+a:hover.c{  font-family: Arial, Helvetica, sans-serif; font-size: 10pt; font-weight: bold; color: #FF4040; text-decoration: none}
+.c{  font-family: Arial, Helvetica, sans-serif; font-size: 10pt; font-weight: bold; color: #100078; text-decoration: none}
+a:hover.e{ font-family: Arial, Helvetica, sans-serif; font-size: 10pt; font-weight: bold; color: #FF4040; text-decoration: none}
+.e{  font-family: Arial, Helvetica, sans-serif; font-size: 10pt; font-weight: bold; color: #FFFFFF; text-decoration: none}
+a:hover.f{ font-family: Arial, Helvetica, sans-serif; font-size: 12pt; font-weight: bold; color: #FF4040; text-decoration: none}
+.f{  font-family: Arial, Helvetica, sans-serif; font-size: 12pt; font-weight: bold; color: #FFFFFF; text-decoration: none}
+a:hover.h{  font-family: Arial, Helvetica, sans-serif; font-size: 8pt; font-weight: normal; color: #E00000}
+.h{  font-family: Arial, Helvetica, sans-serif; font-size: 8pt; font-weight: normal; color: #000000}
+a:hover.i{  font-family: Arial, Helvetica, sans-serif; font-size: 10pt; font-weight: bold; color: #EE0000}
+.i{  font-family: Arial, Helvetica, sans-serif; font-size: 10pt; font-weight: bold; color: #000000}
+a:hover.j{  font-family: Arial, Helvetica, sans-serif; font-size: 12pt; font-weight: bold; color: #EE0000}
+.j{  font-family: Arial, Helvetica, sans-serif; font-size: 12pt; font-weight: bold; color: #000000}
+.l{  font-family: Arial, Helvetica, sans-serif; font-size: 12pt; font-weight: bold; color: #FDD932; text-decoration: none}
+a:hover.m{  font-family: Arial, Helvetica, sans-serif; font-size: 14pt; font-weight: bold; color: #FF4040; text-decoration: none}
+.m{  font-family: Arial, Helvetica, sans-serif; font-size: 14pt; font-weight: bold; color: #FFFFFF; text-decoration: none}
+a:hover.p{  font-family: Arial, Helvetica, sans-serif; font-size: 8pt; font-weight: normal; color: #FF4040}
+.p{  font-family: Arial, Helvetica, sans-serif; font-size: 8pt; font-weight: normal; color: #808080}
+a.hover.q{ font-family: Arial, Helvetica, sans-serif; font-size: 10pt; font-weight: bold; color: #FF4040; text-decoration: none}
+.q{ font-family: Arial, Helvetica, sans-serif; font-size: 10pt; font-weight: bold; color: #FFFFFF; text-decoration: none}
+a:hover.r{ font-family: Arial, Helvetica, sans-serif; font-size: 10pt; font-weight: bold; color: #FF4040; background-color: #100078; text-align: center}
+.r{ font-family: Arial, Helvetica, sans-serif; font-size: 10pt; font-weight: bold; color: #FFFFFF; background-color: #100078; text-align: center}
+a:hover.s{ font-family: Arial, Helvetica, sans-serif; font-size: 16pt; font-weight: bold; color: #FF4040; background-color: #100078; text-align: center}
+.s{ font-family: Arial, Helvetica, sans-serif; font-size: 16pt; font-weight: bold; color: #FFFFFF; background-color: #100078; text-align: center}
+a:hover.t{ font-family: Arial, Helvetica, sans-serif; font-size: 10pt; font-weight: bold; color: #FF4040; background-color: #000000; text-align: center}
+.t{ font-family: Arial, Helvetica, sans-serif; font-size: 10pt; font-weight: bold; color: #0080FF; background-color: #000000; text-align: center}
+.v{ font-family: Arial, Helvetica, sans-serif; font-size: 12pt; font-weight: bold; color: #FDD932; background-color: #100078; text-align: center}
+.vv{ font-family: Arial, Helvetica, sans-serif; font-size: 14pt; font-weight: bold; color: #FDD932; background-color: #100078; text-align: center}
+a:hover.w{ font-family: Arial, Helvetica, sans-serif; font-size: 10pt; font-weight: bold; color: #EE0000; background-color: #C0C0C0; text-align: center}
+.w{ font-family: Arial, Helvetica, sans-serif; font-size: 10pt; font-weight: bold; color: #000000; background-color: #C0C0C0; text-align: center}
+a:hover.y{ font-family: Arial, Helvetica, sans-serif; font-size: 10pt; font-weight: bold; color: #FF4040; background-color: #000000; text-align: center}
+.y{ font-family: Arial, Helvetica, sans-serif; font-size: 10pt; font-weight: bold; color: #FFFFFF; background-color: #000000; text-align: center}
+a:hover.z{ font-family: Arial, Helvetica, sans-serif; font-size: 10pt; font-weight: bold; color: #FF4040; background-color: #000000; text-align: center}
+.z{ font-family: Arial, Helvetica, sans-serif; font-size: 10pt; font-weight: bold; color: #FDD932; background-color: #000000; text-align: center}
+.aa{ font-family: Arial, Helvetica, sans-serif; font-size: 18pt; font-weight: bold; color: #FFFFFF; background-color: #100078; text-align: center}
+.ab{ font-family: Arial, Helvetica, sans-serif; font-size: 18pt; font-weight: bold; color: #FDD932; background-color: #100078; text-align: center}
+a:hover.ac{ font-family: Arial, Helvetica, sans-serif; font-size: 18pt; font-weight: bold; color: #EE0000}
+.ac{ font-family: Arial, Helvetica, sans-serif; font-size: 18pt; font-weight: bold; color: #000000}
+.ad{ font-family: Arial, Helvetica, sans-serif; font-size: 10pt; font-weight: bold; color: #000000; background-color: #808080; text-align: center}
+a:hover.ae{  font-family: Arial, Helvetica, sans-serif; font-size: 8pt; font-weight: normal; color: #FF4040; text-decoration: none}
+.ae{  font-family: Arial, Helvetica, sans-serif; font-size: 8pt; font-weight: normal; color: #808080; text-decoration: none}
+.ak{ font-family: Arial, Helvetica, sans-serif; font-size: 10pt; font-weight: bold; color: #FF0000; background-color: #100078; text-align: center}
+a:hover.al{ font-family: Arial, Helvetica, sans-serif; font-size: 10pt; font-weight: bold; color: #FF4040; background-color: #000000; text-align: center; text-decoration: none}
+.al{ font-family: Arial, Helvetica, sans-serif; font-size: 10pt; font-weight: bold; color: #0080FF; background-color: #000000; text-align: center; text-decoration: none}
+a:hover.am{ font-family: Arial, Helvetica, sans-serif; font-size: 10pt; font-weight: bold; color: #FF4040; background-color: #000000; text-align: center; text-decoration: none}
+.am{ font-family: Arial, Helvetica, sans-serif; font-size: 10pt; font-weight: bold; color: #FDD932; background-color: #000000; text-align: center; text-decoration: none}
+.t1{background-color: #EE0000}
+.t2{background-color: #0000EE}
+.t3{background-color: #008000}
+.t4{background-color: #FDD932}

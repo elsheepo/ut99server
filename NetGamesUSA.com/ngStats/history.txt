@@ -1,0 +1,28 @@
+Revision history for ngStats from NetGames USA or Unreal Tournament.
+Latest patches and info are available at http://www.NetGamesUSA.com/ngStats/UT/
+
+version 1.1 - 16 November 1999
+* Added "Crushed", "Mortared", and "AutoCannon" suicides
+* Fixed GMT Timezone bug that would cause ngStats to not process games
+* Upgraded ngStats Database and added DB conversion routines
+* Removed InstaGib Game Type
+
+Version 1.0.4 - 17 October 1999
+
+* Updated help files
+* Added "Stomped" death/kill type
+
+Version 1.0.3 - 24 September 1999
+
+* Added Game Speed and Game Style to match info table.
+
+Version 1.0.2 - 22 September 1999
+* Added bot skill to bot's names.
+* 32 players is now the max that will show on a detailed graph.
+* Fixed players having wrong legend in graphs with over 16 players
+
+Version 1.0.1 - 15 September 1999
+* Fixed bug where players names could show up incorrectly. Note: This was a last minute fix that made its way into some versions of the 3dfx demo and not others due to complications with hurricane Floyd.
+
+Version 1.0 - 15 September 1999
+Initial release of ngStats for Unreal Tournament with the special 3dfx demo.

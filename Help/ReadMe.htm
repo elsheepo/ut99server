@@ -1,0 +1,202 @@
+<html>
+
+<head>
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<title>Unreal Tournament Downloadable Server - Release Notes</title>
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000">
+
+<p align="center"><img SRC="UnrealTournamentSetupLogo.gif" width="343" height="82"><br>
+</p>
+
+<h1 align="center">Unreal Tournament Dedicated Server</h1>
+
+<h2 align="center">Readme.htm for Version 428</h2>
+
+<p align="center">Copyright (C) 2000 Epic Games</p>
+
+<h3 align="left">Introduction</h3>
+
+<p align="left">Thanks for downloading the Unreal Tournament dedicated server.&nbsp; This
+installation contains a modified version of Unreal Tournament with just the files needed
+to run the game in dedicated server mode.&nbsp; These files are made available for use
+entirely at your own risk.&nbsp; You may not use the Unreal Tournament Dedicated Server
+for any purpose other than to run an Unreal Tournament server.&nbsp; We encourage you to
+run as many servers as possible, and to install and run custom maps and mods on your
+servers.</p>
+
+<h3 align="left">Useful Web Links for Server Administrators</h3>
+
+<h4 align="left">Epic Sites</h4>
+
+<ul>
+  <li><a href="http://unreal.epicgames.com/" target="_parent">Unreal Technology Page</a> --
+    Latest news from the UT development team, along with technical documentation and the
+    latest official UT downloads.&nbsp; The current <a
+    href="http://unreal.epicgames.com/utservers.htm">Running UT Servers</a> document (for the
+    full version of Unreal Tournament) is available from the Tech Page. </li>
+  <li><a href="http://www.unrealtournament.com/" target="_parent">Unreal Tournament Home Page</a>
+    -- Visit for the latest updates, patches, and community events!</li>
+  <li><a href="http://www.epicgames.com/" target="_parent">Epic Games Home Page</a> --
+    Information about other Epic games.</li>
+</ul>
+
+<h4>Other Sites</h4>
+
+<ul>
+  <li><a href="http://www.planetunreal.com/theadminpage">The Admin Page</a> -- A great
+    resource for Unreal Tournament server administrators.</li>
+  <li><a href="http://www.planetunreal.com">Planet Unreal</a> -- An Unreal Tournament News
+    site.</li>
+  <li><a href="http://www.unrealuniverse.com">Unreal Universe</a> -- An Unreal Tournament News
+    site.</li>
+<li><a href="http://www.unrealtournament.org">UnrealTournament.org</a> -- An Unreal Tournament News
+    site.</li></ul>
+
+<h3>Starting a Server</h3>
+
+<p>The setup program will have created a shortcut titled &quot;Start UT Server&quot; in
+your Start Menu.&nbsp; This shortcut will start a simple, unconfigured deathmatch server.
+&nbsp; Once the server is running, you should use the remote administration feature to
+configure your UT server.&nbsp; See the Remote Administration section below for more
+information.</p>
+
+<h4>Launching the Server from the Command Line</h4>
+
+<blockquote>
+  <p>The syntax for running a server from a command line is as follows:</p>
+  <blockquote>
+    <p><nobr>C:\UnrealTournament\System&gt; ucc.exe server <em>mapname</em>.unr?game=<em>GameType</em>
+    [port=<em>portnum</em>] [multihome=<em>ipaddress</em>] [ini=<em>inifilename</em>] [log=<em>logfilename</em>]
+    </nobr></p>
+    <p><nobr><strong><em>port</em> </strong>- the optional base port number the server uses.<br>
+    <strong><em>ini</em> </strong>- the name of the ini file the server uses.&nbsp; This
+    defaults to UnrealTournament.ini<br>
+    <strong><em>log</em> </strong>- the name of the logfile the server generates.&nbsp; The
+    default is ucc.log<br>
+    <strong><em>multihome</em> </strong>- the IP address the server should bind to, if your
+    server has multiple local IP addresses.<br>
+    <strong><em>GameType</em></strong> - specifies the game type.&nbsp; One of <strong>Botpack.DeathMatchPlus</strong>,
+    <strong>Botpack.Domination</strong>, <strong>Botpack.CTFGame, Botpack.LastManStanding.</strong>.</nobr></p>
+  </blockquote>
+</blockquote>
+
+<blockquote>
+  <p>Some examples:</p>
+  <blockquote>
+    <p><nobr>ucc server dm-Turbine?game=Botpack.DeathMatchPlus ini=server1.ini log=server1.log</nobr><br>
+    <nobr>ucc server ctf-coret?game=Botpack.CTFGame ini=server2.ini log=server2.log</nobr> <nobr>multihome=204.12.54.28</nobr><br>
+    <nobr>ucc server dom-Sesmar?game=Botpack.Domination ini=server3.ini log=server3.log
+    multihome=204.12.54.29</nobr></p>
+  </blockquote>
+  <p><nobr>It's a good idea to make a small batch file which automatically restarts the
+  server should it crash:</nobr></p>
+  <blockquote>
+    <p><nobr>:top</nobr><br>
+    <nobr>c:</nobr><br>
+    <nobr>cd \unrealtournament</nobr>\system<br>
+    <nobr>ucc server dm-Turbine?game=Botpack.DeathMatchPlus ini=server1.ini log=server1.log</nobr><br>
+    <nobr>copy server1.log server1crash.log</nobr><br>
+    <nobr>goto top</nobr></p>
+  </blockquote>
+  <p>Should you get a server crash, please mail the log file to <a
+  href="mailto:utbugs@epicgames.com">utbugs413@epicgames.com</a>.</p>
+</blockquote>
+
+<h4>Multiple Servers Per Machine</h4>
+
+<blockquote>
+  <p>Each instance of the UT dedicated server can serve one and only one level at a time.</p>
+  <p>However, you can run multiple servers on one machine.&nbsp; Each instance of the server
+  should have its own unique copy of the UnrealTournament.ini file, with its own
+  configuration.&nbsp; This is specified with the <strong>ini</strong> command line option.
+  &nbsp; If you want to enable remote administration on multiple servers on the same
+  machine, and you're not using <strong>multihome</strong> to specify a unique IP address to
+  bind to, you'll need to give each webserver a unique <strong>ListenPort</strong> number.</p>
+  <p>You should give each server a unique base UDP port number. UT's default port number is
+  7777. To specify a port, use the <strong>port</strong> command-line option as shown above.
+  &nbsp; Be sure to space the port numbers 10 apart as each server requires a number of UDP
+  ports.&nbsp; eg:</p>
+  <blockquote>
+    <p><nobr>ucc server ctf-coret?game=Botpack.CTFGame ini=server1.ini log=server1.log
+    port=7770</nobr><br>
+    <nobr>ucc server dom-Sesmar?game=Botpack.Domination ini=server2.ini log=server2.log
+    port=7780</nobr></p>
+  </blockquote>
+  <p>Some Windows NT servers have more than one IP address defined (under Advanced in the
+  TCP/IP control panel). If this is the case, you can run multiple servers on the same
+  machine without configuring different port numbers.&nbsp; Specify the IP address for the
+  server to listen on using the <strong>multihome</strong> option.&nbsp; This batch file
+  starts two servers, each binding to a different IP address.</p>
+  <blockquote>
+    <p><nobr>start ucc server ctf-coret?game=Botpack.CTFGame ini=server1.ini log=server1.log</nobr>
+    <nobr>multihome=204.12.54.28</nobr><br>
+    <nobr>start ucc server dom-Sesmar?game=Botpack.Domination ini=server2.ini log=server2.log
+    multihome=204.12.54.29</nobr></p>
+  </blockquote>
+</blockquote>
+
+<h3>Remote Administration</h3>
+
+<p>Once the server is up and running, you can access your Unreal Tournament server with
+any web browser.&nbsp; Internet Explorer 4 or 5 is recommended, but it should also work
+fine with Netscape 4.&nbsp; To access your UT server from a web browser running on the
+server machine, Use the following URL to access the remote administration: </p>
+
+<blockquote>
+  <p><a href="http://127.0.0.1:8888/ServerAdmin">http://127.0.0.1:8888/ServerAdmin</a></p>
+</blockquote>
+
+<p>A shortcut to this link was added to the Start Menu named &quot;WWW Remote Admin my UT
+Server&quot;.&nbsp; You can substitute 127.0.0.1 for the IP address of your server to
+administer it from a web browser on another computer.&nbsp; </p>
+
+<p>When you bring up the remote admin URL, your web browser will prompt you for a username
+and password.&nbsp;The default username and password are both &quot;<strong>admin</strong>&quot;.
+&nbsp; You should change the password username and/or password by exiting the UT server
+and then editing your UnrealTournament.ini file and changing the lines which say:</p>
+
+<blockquote>
+  <p>[UTServerAdmin.UTServerAdmin]<br>
+  AdminUsername=admin<br>
+  AdminPassword=admin</p>
+</blockquote>
+
+<p>The remote admin is divided into two parts: 
+
+<ul>
+  <li><strong>Current</strong> - Administer the current game in progress - view the player
+    list, kick/ban players, add bots, change the current map, access the server console and
+    chat to players.</li>
+  <li><strong>Defaults</strong> - Change the map list, rules and settings for each game type,
+    configure server-level options, and administer the IP ban list.</li>
+</ul>
+
+<p>You'll want to change the following <strong>Defaults</strong> | <strong>Server</strong>
+options the first time you configure your server. 
+
+<ul>
+  <li><strong>Server Name</strong> - the name of your server</li>
+  <li><strong>Advertise Server</strong> - check this on to advertise your server to the master
+    server</li>
+  <li><strong>ngWorldStats Logging</strong> - tcheck this on to have your server participate
+    in <a href="http://ut.ngworldstats.com">ngWorldStats</a> for UT.</li>
+</ul>
+
+<h3>Performance</h3>
+
+<ul>
+  <li>Make sure to match the maximum number of players for your server to the bandwidth you
+    have available.&nbsp; The amount of bandwidth required for each user is determined by the
+    MaxClientRate, which is set by default to 20000 bytes/sec.&nbsp; If your connection is
+    bandwidth limited (for example a cable modem), you should reduce this value (you can edit
+    your UnrealTournament.ini file in your UnrealTournament\system directory - MaxClientRate
+    is in the [IpDrv.TcpNetDriver] section).&nbsp; Make sure that the MaxUsers multiplied by
+    the MaxClientRate is less than your available bandwidth (in the case of cable modems or
+    xDSL, your upstream bandwidth).</li>
+</ul>
+
+<hr>
+</body>
+</html>
